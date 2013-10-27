@@ -142,6 +142,16 @@ h1 {
     #logo {
       position: relative;
       left: 50%;
+      img {
+        /* default fallback */
+        background: rgb(255, 0, 0) transparent;
+        /* nice browsers */
+        background: rgba(255, 0, 0, 0.2);
+        /* IE 6/7 */
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0000, endColorstr=#ff0000);
+        /* IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0000, endColorstr=ff0000)";
+      }
     }
     #bear-user-menu {
       position: absolute;
@@ -325,6 +335,14 @@ ul.social-footer {
   position: absolute;
   left:150px;
   top: -100px;
+  z-index: 9;
+}
+#block-block-1 {
+  max-width: 300px;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  top: 250px;
 }
 #home-menu {
   margin: 35px 0 0 0;
@@ -345,4 +363,7 @@ ul.social-footer {
       }
     }
   }
+}
+#supersized li.prevslide img, #supersized li.activeslide img {
+  top: 0 !important;
 }

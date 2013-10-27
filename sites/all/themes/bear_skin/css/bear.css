@@ -373,6 +373,16 @@ h1 {
   position: relative;
   left: 50%;
 }
+.wrapper.header #header #logo img {
+  /* default fallback */
+  background: red transparent;
+  /* nice browsers */
+  background: rgba(255, 0, 0, 0.2);
+  /* IE 6/7 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0000, endColorstr=#ff0000);
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0000, endColorstr=ff0000)";
+}
 .wrapper.header #header #bear-user-menu {
   position: absolute;
   top: 0;
@@ -603,6 +613,15 @@ ul.social-footer li a i:hover {
   position: absolute;
   left: 150px;
   top: -100px;
+  z-index: 9;
+}
+
+#block-block-1 {
+  max-width: 300px;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  top: 250px;
 }
 
 #home-menu {
@@ -624,4 +643,8 @@ ul.social-footer li a i:hover {
 #home-menu ul.menu li a {
   color: #ff981f;
   font-size: 120%;
+}
+
+#supersized li.prevslide img, #supersized li.activeslide img {
+  top: 0 !important;
 }
