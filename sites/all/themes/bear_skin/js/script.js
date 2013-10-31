@@ -34,4 +34,12 @@
 
 $(document).ready(function() { $('#content select.form-select').select2(); });
 
+$(document).ready(function() {
+  $("#skater").peShiner({
+    glow:0,
+    duration: 7,
+    color:'mono',
+  });
+});
+
 })(jQuery, Drupal, this, this.document);

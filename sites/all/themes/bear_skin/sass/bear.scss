@@ -25,7 +25,8 @@ body {
   @include m-links;
 }
 html, body, button, input, select, textarea {
-  @include bearfont-main;
+  font-family: Conduit Light, 'Helvetica', sans-serif;
+  letter-spacing: .1em;
 }
 h1, h2, h3, h4, h5 {
   @include bearfont-titles;
@@ -117,7 +118,7 @@ h1 {
     //background-color: $greyer;
   }
   &.footer {
-    background-color: $grey;
+    background-color: transparent;
   }
 }
 .breadcrumb {
@@ -332,7 +333,7 @@ ul.social-footer {
 
 #skater {
   max-width: 370px;
-  position: absolute;
+  position: absolute !important;
   left:150px;
   top: -100px;
   z-index: 9;
@@ -346,6 +347,8 @@ ul.social-footer {
 }
 #home-menu {
   margin: 35px 0 0 0;
+  position: relative;
+  z-index: 11;
   ul.menu {
     margin: 0;
     padding: 0;
@@ -360,10 +363,28 @@ ul.social-footer {
       a {
         color: #ff981f;
         font-size: 120%;
+        text-decoration: none;
       }
     }
   }
 }
 #supersized li.prevslide img, #supersized li.activeslide img {
   top: 0 !important;
+}
+#party {
+  margin-top: 240px;
+  text-transform: uppercase;
+  color: #ababab;
+  font-family: Conduit Light, 'Helvetica', sans-serif;
+  letter-spacing: .2em;
+  font-size: 110%;
+  padding-left: 38px;
+  background: url("../images/arrow.png") no-repeat left 2px;
+}
+.front .wrapper.footer {
+  background: url("../images/bot-bar.png") no-repeat left top;
+}
+#block-block-2 {
+  font-size: 110%;
+  color: #ababab;
 }
