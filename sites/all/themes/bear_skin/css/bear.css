@@ -614,6 +614,7 @@ ul.social-footer li a i:hover {
   left: 150px;
   top: -100px;
   z-index: 9;
+  opacity: .8;
 }
 
 #block-block-1 {
@@ -636,7 +637,7 @@ ul.social-footer li a i:hover {
   letter-spacing: .2em;
   text-transform: uppercase;
   position: relative;
-  left: 50%;
+  left: 48%;
   width: 50%;
 }
 #home-menu ul.menu li {
@@ -646,9 +647,18 @@ ul.social-footer li a i:hover {
   color: #ff981f;
   font-size: 120%;
   text-decoration: none;
+  padding-left: 20px;
+  display: block;
+  background: url(../images/menu-hover.png) no-repeat -20px 5px;
+}
+#home-menu ul.menu li a:hover {
+  background-position: 0px 5px;
 }
 
-#supersized li.prevslide img, #supersized li.activeslide img {
+#supersized {
+  margin: 0;
+}
+#supersized li.prevslide img, #supersized #supersized li.activeslide img {
   top: 0 !important;
 }
 
@@ -668,6 +678,13 @@ ul.social-footer li a i:hover {
 }
 
 #block-block-2 {
-  font-size: 110%;
+  font-size: 120%;
   color: #ababab;
+  padding-left: 5px;
+}
+#block-block-2 a {
+  color: #ff981f;
+}
+#block-block-2 a:hover {
+  text-decoration: underline;
 }

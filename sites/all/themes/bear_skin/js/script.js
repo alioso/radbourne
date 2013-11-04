@@ -38,8 +38,26 @@ $(document).ready(function() {
   $("#skater").peShiner({
     glow:0,
     duration: 7,
-    color:'mono',
+    color:'black',
+    size: '100',
+    gradientFunction: 'easeInOutQuint',
+    angle: '15',
   });
+});
+
+$(document).ready(function() {
+  $('#home-menu ul.menu li a')
+  .css( {backgroundPosition: "-20px 5px"})
+  .mouseover(function(){
+    $(this).stop().animate(
+      {backgroundPosition:"(0px 5px)"},
+      {duration:500})
+    })
+  .mouseout(function(){
+    $(this).stop().animate(
+      {backgroundPosition:"(-20px 5px)"},
+      {duration:500})
+    })
 });
 
 })(jQuery, Drupal, this, this.document);
