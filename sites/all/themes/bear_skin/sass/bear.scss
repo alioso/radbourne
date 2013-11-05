@@ -147,7 +147,7 @@ h1 {
         /* default fallback */
         background: rgb(255, 0, 0) transparent;
         /* nice browsers */
-        background: rgba(255, 0, 0, 0.2);
+        background: rgba(255, 0, 0, 0.25);
         /* IE 6/7 */
         filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff0000, endColorstr=#ff0000);
         /* IE8 */
@@ -345,6 +345,7 @@ ul.social-footer {
   left: 0;
   z-index: 10;
   top: 250px;
+  opacity: .7;
 }
 #home-menu {
   margin: 35px 0 0 0;
@@ -377,7 +378,7 @@ ul.social-footer {
 }
 #supersized {
   margin: 0;
-  li.prevslide img, #supersized li.activeslide img {
+  li.prevslide img, li.activeslide img {
     top: 0 !important;
   }
 }
